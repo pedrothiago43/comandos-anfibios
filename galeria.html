@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Comandos Anfíbios</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">COMANDOS<span>ANFÍBIOS</span></a>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="galeria.html" class="active">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da Página -->
+    <header class="page-header">
+        <div class="container">
+            <h1>GALERIA</h1>
+            <p>Conheça nosso trabalho através de imagens e vídeos</p>
+        </div>
+    </header>
+
+    <!-- Filtros da Galeria -->
+    <section class="galeria-filtros">
+        <div class="container">
+            <button class="filtro-btn active" data-categoria="todos">Todos</button>
+            <button class="filtro-btn" data-categoria="operacoes">Operações</button>
+            <button class="filtro-btn" data-categoria="treinamento">Treinamento</button>
+            <button class="filtro-btn" data-categoria="equipamentos">Equipamentos</button>
+            <button class="filtro-btn" data-categoria="instalacoes">Instalações</button>
+        </div>
+    </section>
+
+    <!-- Galeria de Imagens -->
+    <section class="galeria">
+        <div class="container">
+            <div class="galeria-grid">
+                <div class="galeria-item" data-categoria="operacoes">
+                    <img src="img/galeria/operacao1.jpg" alt="Operação Anfíbia">
+                    <div class="galeria-overlay">
+                        <h3>Operação Costeira</h3>
+                        <p>Infiltração em área costeira</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="treinamento">
+                    <img src="img/galeria/treinamento1.jpg" alt="Treinamento">
+                    <div class="galeria-overlay">
+                        <h3>Treinamento em Mergulho</h3>
+                        <p>Preparação para operações subaquáticas</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="equipamentos">
+                    <img src="img/galeria/equipamento1.jpg" alt="Equipamentos">
+                    <div class="galeria-overlay">
+                        <h3>Veículo Anfíbio</h3>
+                        <p>Transporte especializado</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="instalacoes">
+                    <img src="img/galeria/base1.jpg" alt="Base de Operações">
+                    <div class="galeria-overlay">
+                        <h3>Base Naval</h3>
+                        <p>Nossa sede operacional</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="operacoes">
+                    <img src="img/galeria/operacao2.jpg" alt="Operação Noturna">
+                    <div class="galeria-overlay">
+                        <h3>Operação Noturna</h3>
+                        <p>Missão de reconhecimento</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="treinamento">
+                    <img src="img/galeria/treinamento2.jpg" alt="Simulação">
+                    <div class="galeria-overlay">
+                        <h3>Simulação de Resgate</h3>
+                        <p>Treinamento de equipe</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="equipamentos">
+                    <img src="img/galeria/equipamento2.jpg" alt="Comunicações">
+                    <div class="galeria-overlay">
+                        <h3>Equipamento de Comunicação</h3>
+                        <p>Sistema subaquático</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="instalacoes">
+                    <img src="img/galeria/base2.jpg" alt="Centro de Comando">
+                    <div class="galeria-overlay">
+                        <h3>Centro de Comando</h3>
+                        <p>Sala de operações</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-categoria="operacoes">
+                    <img src="img/galeria/operacao3.jpg" alt="Resgate">
+                    <div class="galeria-overlay">
+                        <h3>Operação de Resgate</h3>
+                        <p>Busca e salvamento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para Imagem Ampliada -->
+    <div class="modal-galeria">
+        <span class="fechar-modal">&times;</span>
+        <img class="modal-conteudo" id="img-ampliada">
+        <div class="modal-legenda"></div>
+    </div>
+
+    <!-- Seção de Vídeos -->
+    <section class="videos">
+        <div class="container">
+            <h2>VÍDEOS</h2>
+            <div class="videos-grid">
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Treinamento Comandos Anfíbios" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Treinamento Básico</h3>
+                </div>
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Operação Real" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Operação de Infiltração</h3>
+                </div>
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Equipamentos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Nossos Equipamentos</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>COMANDOS ANFÍBIOS</h3>
+                <p>Especialistas em operações marítimas, costeiras e fluviais com treinamento de elite.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Base Naval, Rio de Janeiro - RJ</li>
+                    <li><i class="fas fa-phone"></i> (21) 99999-9999</li>
+                    <li><i class="fas fa-envelope"></i> contato@comandosanfibios.com.br</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 Comandos Anfíbios. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
