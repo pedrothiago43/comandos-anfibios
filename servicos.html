@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Comandos Anfíbios</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">COMANDOS<span>ANFÍBIOS</span></a>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html" class="active">Serviços</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da Página -->
+    <header class="page-header">
+        <div class="container">
+            <h1>NOSSOS SERVIÇOS</h1>
+            <p>Operações especializadas para desafios complexos em ambientes aquáticos</p>
+        </div>
+    </header>
+
+    <!-- Seção de Serviços -->
+    <section class="nossos-servicos">
+        <div class="container">
+            <div class="servico-tabs">
+                <button class="tab-btn active" data-tab="operacoes">Operações Especiais</button>
+                <button class="tab-btn" data-tab="treinamento">Treinamento</button>
+                <button class="tab-btn" data-tab="consultoria">Consultoria</button>
+                <button class="tab-btn" data-tab="equipamentos">Equipamentos</button>
+            </div>
+
+            <div class="servico-content active" id="operacoes">
+                <div class="servico-detalhes">
+                    <h2>Operações Especiais Anfíbias</h2>
+                    <p>Realizamos operações complexas em ambientes marítimos, costeiros e fluviais com equipes altamente especializadas e equipamentos de última geração.</p>
+                    <ul class="servico-lista">
+                        <li><i class="fas fa-check"></i> Operações de infiltração e exfiltração anfíbia</li>
+                        <li><i class="fas fa-check"></i> Reconhecimento de áreas costeiras</li>
+                        <li><i class="fas fa-check"></i> Neutralização de ameaças em instalações portuárias</li>
+                        <li><i class="fas fa-check"></i> Operações de busca e salvamento em alto mar</li>
+                        <li><i class="fas fa-check"></i> Proteção VIP em ambientes aquáticos</li>
+                    </ul>
+                    <a href="contato.html" class="btn">Solicitar Operação</a>
+                </div>
+                <div class="servico-imagem">
+                    <img src="img/operacao-especial.jpg" alt="Operação Especial">
+                </div>
+            </div>
+
+            <div class="servico-content" id="treinamento">
+                <div class="servico-detalhes">
+                    <h2>Treinamento Especializado</h2>
+                    <p>Programas de treinamento desenvolvidos para preparar profissionais para os desafios mais exigentes em ambientes aquáticos e operações anfíbias.</p>
+                    <ul class="servico-lista">
+                        <li><i class="fas fa-check"></i> Curso Básico de Operações Anfíbias (40h)</li>
+                        <li><i class="fas fa-check"></i> Treinamento Avançado em Mergulho Tático (80h)</li>
+                        <li><i class="fas fa-check"></i> Técnicas de Infiltração por Via Aquática (60h)</li>
+                        <li><i class="fas fa-check"></i> Sobrevivência em Ambientes Hostis (72h)</li>
+                        <li><i class="fas fa-check"></i> Curso de Comandante de Operações Anfíbias (120h)</li>
+                    </ul>
+                    <a href="contato.html" class="btn">Informações sobre Treinamento</a>
+                </div>
+                <div class="servico-imagem">
+                    <img src="img/treinamento-anfibio.jpg" alt="Treinamento Anfíbio">
+                </div>
+            </div>
+
+            <div class="servico-content" id="consultoria">
+                <div class="servico-detalhes">
+                    <h2>Consultoria em Segurança Anfíbia</h2>
+                    <p>Serviços especializados de avaliação e planejamento de segurança para instalações costeiras, portuárias e plataformas offshore.</p>
+                    <ul class="servico-lista">
+                        <li><i class="fas fa-check"></i> Análise de vulnerabilidade em instalações costeiras</li>
+                        <li><i class="fas fa-check"></i> Elaboração de planos de segurança aquática</li>
+                        <li><i class="fas fa-check"></i> Desenvolvimento de protocolos de emergência</li>
+                        <li><i class="fas fa-check"></i> Auditoria de sistemas de vigilância marítima</li>
+                        <li><i class="fas fa-check"></i> Simulações de cenários de ameaça</li>
+                    </ul>
+                    <a href="contato.html" class="btn">Solicitar Consultoria</a>
+                </div>
+                <div class="servico-imagem">
+                    <img src="img/consultoria-anfibia.jpg" alt="Consultoria Anfíbia">
+                </div>
+            </div>
+
+            <div class="servico-content" id="equipamentos">
+                <div class="servico-detalhes">
+                    <h2>Equipamentos Especializados</h2>
+                    <p>Fornecimento e manutenção de equipamentos de última geração para operações anfíbias e ambientes aquáticos.</p>
+                    <ul class="servico-lista">
+                        <li><i class="fas fa-check"></i> Equipamentos de mergulho tático</li>
+                        <li><i class="fas fa-check"></i> Veículos de assalto anfíbios</li>
+                        <li><i class="fas fa-check"></i> Sistemas de comunicação subaquática</li>
+                        <li><i class="fas fa-check"></i> Equipamentos de vigilância costeira</li>
+                        <li><i class="fas fa-check"></i> Manutenção e calibração de equipamentos</li>
+                    </ul>
+                    <a href="contato.html" class="btn">Catálogo de Equipamentos</a>
+                </div>
+                <div class="servico-imagem">
+                    <img src="img/equipamentos-anfibios.jpg" alt="Equipamentos Anfíbios">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Diferenciais -->
+    <section class="diferenciais">
+        <div class="container">
+            <h2>POR QUE ESCOLHER OS COMANDOS ANFÍBIOS?</h2>
+            <div class="diferenciais-grid">
+                <div class="diferencial-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>Experiência Comprovada</h3>
+                    <p>Mais de 35 anos de atuação em operações reais em diversos cenários.</p>
+                </div>
+                <div class="diferencial-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Profissionais de Elite</h3>
+                    <p>Equipe composta por especialistas com treinamento internacional.</p>
+                </div>
+                <div class="diferencial-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Tecnologia Avançada</h3>
+                    <p>Utilizamos os equipamentos mais modernos do mercado.</p>
+                </div>
+                <div class="diferencial-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Sigilo Absoluto</h3>
+                    <p>Protocolos rígidos de segurança da informação em todas as operações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato Rápido -->
+    <section class="contato-rapido">
+        <div class="container">
+            <div class="contato-texto">
+                <h2>PRONTO PARA INICIAR SUA OPERAÇÃO?</h2>
+                <p>Entre em contato conosco para discutir suas necessidades específicas. Nossa equipe está pronta para ajudar.</p>
+            </div>
+            <div class="contato-botoes">
+                <a href="contato.html" class="btn">Fale Conosco</a>
+                <a href="tel:+5521999999999" class="btn-outline"><i class="fas fa-phone"></i> (21) 99999-9999</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>COMANDOS ANFÍBIOS</h3>
+                <p>Especialistas em operações marítimas, costeiras e fluviais com treinamento de elite.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Base Naval, Rio de Janeiro - RJ</li>
+                    <li><i class="fas fa-phone"></i> (21) 99999-9999</li>
+                    <li><i class="fas fa-envelope"></i> contato@comandosanfibios.com.br</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 Comandos Anfíbios. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
